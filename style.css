@@ -8,7 +8,7 @@
 }
 .container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /* Light blue/light-blue-100 */
   background: #f3f5fc;
@@ -215,6 +215,14 @@
   resize: none;
   border: none;
   /*display: none;*/
+}
+footer {
+  text-align: center;
+  width: 100%;
+  background: #c1c3ca;
+  height: 50px;
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 @media (max-width: 57.5em) {
