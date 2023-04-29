@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="Logo.png" alt="logo" class="logo" />
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresar texto aquí"
+          oninput="detectarTexto()"
+        ></textarea>
+
+        <div class="condiciones">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button class="btn1" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button class="btn2" type="button" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+
+      <div class="bloque-cript">
+        <textarea
+          name="texto"
+          class="texto-encriptado"
+          id="texto-encriptado"
+          cols="30"
+          rows="10"
+          readonly="readonly"
+        ></textarea>
+        <lottie-player
+          class="imagen-bloque"
+          id="imagen-bloque"
+          src="https://assets4.lottiefiles.com/packages/lf20_l5qvxwtf.json"
+          background="transparent"
+          speed="0.5"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="msj-cripted" id="msj-cripted">
+          <h2 class="titulo-msj">Ningun mensaje encontrado</h2>
+          <p class="parrafo" id="parrafo">
+            Ingrese el texto que desea encriptar o desencriptar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>

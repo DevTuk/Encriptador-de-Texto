@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 1%;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* Light blue/light-blue-100 */
+  background: #f3f5fc;
+}
+.texto {
+  position: absolute;
+  width: 42%;
+  height: 60%;
+  left: 12%;
+  top: 15%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+  /* Dark blue/dark-blue-300 */
+  color: #0a3871;
+  background: #f3f5fc;
+  border: none;
+  resize: none;
+}
+.texto::placeholder {
+  color: #0a3871;
+}
+.texto:focus,
+.texto:active {
+  border: none;
+  outline: none;
+}
+.condiciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 80%;
+}
+.condicion p {
+  width: 205px;
+  height: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+  /* Gray/gray-400 */
+  color: #495057;
+  opacity: 0.8;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1% 0;
+  gap: 24px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 82%;
+}
+.btn1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  line-height: 19px;
+  /* Dark blue/dark-blue-300 */
+  background: #0a3871;
+  border-radius: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #f3f5fc;
+  font-size: larger;
+}
+.btn2 {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  line-height: 19px;
+  /* Light gray */
+  background: #d8dfe8;
+  /* Dark blue/dark-blue-300 */
+  /*border: 1px solid #0a3871;*/
+  border-radius: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-size: larger;
+}
+.btn1:hover,
+.btn2:hover {
+  margin: 0.3%;
+  width: 24.5%;
+  padding: 1.8%;
+}
+
+.bloque-cript {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  left: 60%;
+  top: 5%;
+  /* White */
+  background: #ffffff;
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+.imagen-bloque {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+  left: 25%;
+  /*display: none;*/
+}
+
+.msj-cripted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+
+  /*display: none;*/
+}
+
+.titulo-msj {
+  width: 60%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
+
+.parrafo {
+  width: 80%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+.text-cript {
+  position: absolute;
+  width: 336px;
+  height: 781px;
+  left: 1032px;
+  top: 72px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+  /* Gray/gray-400 */
+  color: #495057;
+  /*visibility: hidden;*/
+}
+.texto-encriptado {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  bottom: 10%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  text-align: start;
+  resize: none;
+  border: none;
+  /*display: none;*/
+}
+
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+  }
+  .encriptar {
+    width: 80%;
+  }
+  .texto {
+    width: 80%;
+    height: 50%;
+    left: 10%;
+    top: 10%;
+  }
+  .condiciones {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .condiciones p {
+    font-size: 16px;
+  }
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .btn1,
+  .btn2 {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn1:hover,
+  .btn2:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .bloque-cript {
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 80%;
+  }
+  .imagen-bloque {
+    display: none !important;
+  }
+  .msj-cripted {
+    width: 100%;
+    top: 5%;
+    left: 1%;
+  }
+}
